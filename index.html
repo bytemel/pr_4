@@ -7,21 +7,25 @@
     <title>My HTML Project</title>
     <style>
         body {
-            background-image: url('img_bc.avif'); 
+            background-image: url('img_bc.avif');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            color: #ffffff; 
+            color: #ffffff;
+            filter: blur(5px); /* Blur the background */
         }
 
         .container {
-            border: 1px solid #ccc;
-            padding: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.5); /* Semi-transparent border */
+            padding: 20px; /* Add more padding */
             margin: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
         }
 
         .container p {
             text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
         }
 
         .image-container {
@@ -31,10 +35,31 @@
         img {
             max-width: 100%;
             height: auto;
+            border-radius: 8px; /* Add a border radius for image */
         }
 
         .skills-container {
             text-align: center;
+        }
+
+        .skills-container ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .skills-container li {
+            margin: 0 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for skills */
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -71,7 +96,6 @@
         <section>
             <h2>Skills</h2>
             <div class="skills-container">
-                <p>Here are some of my skills:</p>
                 <ul>
                     <li>HTML</li>
                     <li>CSS</li>
